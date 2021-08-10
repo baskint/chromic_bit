@@ -16,6 +16,8 @@ defmodule ChromicBitWeb.Router do
   scope "/", ChromicBitWeb do
     pipe_through :browser
 
+    get "/chromic", UrlToPdfController, :index
+
     get "/", PageController, :index
   end
 

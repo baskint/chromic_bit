@@ -14,7 +14,8 @@ defmodule ChromicBit.Application do
       # Start the PubSub system
       {Phoenix.PubSub, name: ChromicBit.PubSub},
       # Start the Endpoint (http/https)
-      ChromicBitWeb.Endpoint
+      ChromicBitWeb.Endpoint,
+      ChromicPDF
       # Start a worker by calling: ChromicBit.Worker.start_link(arg)
       # {ChromicBit.Worker, arg}
     ]
